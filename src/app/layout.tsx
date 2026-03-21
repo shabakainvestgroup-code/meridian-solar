@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     "photovoltaïque Marrakech",
     "Meridian Solar",
   ],
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "fr_MA",
