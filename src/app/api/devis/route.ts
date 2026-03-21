@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || "contact@meridiansolar.ma";
 const FROM_EMAIL = process.env.FROM_EMAIL || "noreply@meridiansolar.ma";
 
@@ -188,6 +187,7 @@ function buildConfirmationHtml(name: string, isDevis: boolean): string {
 
 export async function POST(req: Request) {
   try {
+    const resend = new Resend(process.env.RESEND_API_KEY);
     const body: DevisBody = await req.json();
 
     if (!body.email) {
