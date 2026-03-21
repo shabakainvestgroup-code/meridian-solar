@@ -16,52 +16,21 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "À propos – Meridian Solar Marrakech",
   description:
-    "Découvrez Meridian Solar, l'expert en énergie solaire à Marrakech depuis 2013. Notre équipe, nos valeurs et notre engagement pour un Maroc plus vert.",
+    "Meridian Solar, une expertise de plus de 10 ans dans les énergies renouvelables en Europe, mise au service du Maroc.",
 };
-
-const team = [
-  {
-    name: "Youssef El Amrani",
-    role: "Fondateur & Directeur Général",
-    bio: "Ingénieur en génie électrique (École Polytechnique de Paris), 15 ans d'expérience dans le solaire photovoltaïque au Maroc et en Europe.",
-    initials: "YA",
-    color: "navy",
-  },
-  {
-    name: "Sara Benjelloun",
-    role: "Directrice Technique",
-    bio: "Ingénieure en systèmes d'énergie renouvelable. Certifiée SunPower et Fronius. Pilote toutes nos études de faisabilité et conceptions.",
-    initials: "SB",
-    color: "gold",
-  },
-  {
-    name: "Karim Tazi",
-    role: "Responsable Commercial",
-    bio: "Expert en solutions énergétiques pour l'industrie et l'hôtellerie. Accompagne nos clients dans leur retour sur investissement.",
-    initials: "KT",
-    color: "navy",
-  },
-  {
-    name: "Nadia Chraibi",
-    role: "Chef de Projets",
-    bio: "Coordinatrice experte des chantiers d'installation. Garantit la qualité d'exécution et le respect des délais pour chaque projet.",
-    initials: "NC",
-    color: "gold",
-  },
-];
 
 const values = [
   {
     icon: Target,
     title: "Excellence",
     description:
-      "Nous n'acceptons que le meilleur. Matériaux premium, main-d'œuvre certifiée et normes internationales à chaque installation.",
+      "Nous n'acceptons que le meilleur. Matériaux premium, main-d'œuvre qualifiée et normes européennes à chaque installation.",
   },
   {
     icon: Heart,
     title: "Engagement Client",
     description:
-      "Votre satisfaction est notre priorité. De la première consultation à la maintenance, nous sommes là pour vous.",
+      "Votre satisfaction est notre priorité. De la première consultation à la mise en service, nous sommes à vos côtés.",
   },
   {
     icon: Leaf,
@@ -78,21 +47,18 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2013", event: "Fondation de Meridian Solar à Marrakech" },
-  { year: "2015", event: "100ème installation résidentielle" },
-  { year: "2017", event: "Premier projet industriel +200 kWc" },
-  { year: "2019", event: "Certification IRESEN & partenariat SunPower" },
-  { year: "2021", event: "Expansion à Casablanca et Agadir" },
-  { year: "2023", event: "500ème projet et 8 MW installés au total" },
-  { year: "2024", event: "Lancement division stockage par batteries" },
+  { year: "France", event: "Directeur au sein de plusieurs entreprises spécialisées dans les économies d'énergie et les énergies renouvelables" },
+  { year: "France", event: "Gérant fondateur de sa propre société — installations solaires, pompes à chaleur et solutions d'efficacité énergétique" },
+  { year: "2020", event: "Installation au Maroc et création de Meridian Solar à Marrakech" },
+  { year: "Aujourd'hui", event: "Une équipe dédiée, des projets réalisés dans tout le Maroc" },
 ];
 
-const certifications = [
-  "IRESEN – Institut de Recherche en Énergie Solaire",
-  "SunPower Certified Dealer",
-  "Fronius Service Partner",
-  "ISO 9001:2015 Qualité",
-  "Membre AMISOLE (Association Marocaine)",
+const engagements = [
+  "Matériaux et équipements aux standards européens",
+  "Études techniques personnalisées pour chaque projet",
+  "Suivi et maintenance après installation",
+  "Transparence totale sur les devis et délais",
+  "En cours de certification auprès des organismes reconnus",
 ];
 
 export default function AProposPage() {
@@ -110,9 +76,8 @@ export default function AProposPage() {
             Qui Sommes-Nous ?
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Depuis 2013, Meridian Solar accompagne les particuliers, entreprises
-            et institutions de Marrakech vers une énergie propre, économique et
-            durable.
+            Une expertise de plus de 10 ans dans les énergies renouvelables en Europe,
+            mise au service des particuliers, entreprises et institutions du Maroc.
           </p>
         </div>
         <div className="absolute bottom-0 left-0 right-0">
@@ -128,37 +93,44 @@ export default function AProposPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="text-navy-600 font-semibold text-sm uppercase tracking-widest mb-3 block">
-                Notre Mission
+                Notre Histoire
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Rendre l&apos;Énergie Solaire{" "}
-                <span className="gradient-text">Accessible à Tous</span>
+                L&apos;Expertise Européenne{" "}
+                <span className="gradient-text">au Service du Maroc</span>
               </h2>
               <p className="text-gray-500 leading-relaxed mb-6">
-                Né à Marrakech, Meridian Solar est parti d&apos;un constat simple :
-                le Maroc est l&apos;un des pays les mieux exposés au soleil au monde,
-                pourtant trop peu de foyers et d&apos;entreprises exploitent ce
-                formidable potentiel.
+                Hicham Abdeladim, gérant fondateur de Meridian Solar, a consacré plus de
+                10 ans à l&apos;industrie des énergies renouvelables en France. D&apos;abord
+                directeur au sein de plusieurs entreprises du secteur, il devient ensuite
+                chef d&apos;entreprise à la tête de sa propre société spécialisée dans
+                l&apos;installation solaire, les pompes à chaleur et les solutions
+                d&apos;économie d&apos;énergie.
+              </p>
+              <p className="text-gray-500 leading-relaxed mb-6">
+                En 2020, il s&apos;installe au Maroc avec une conviction forte : le
+                potentiel solaire marocain est immense et mérite une approche
+                professionnelle à la hauteur des standards européens. C&apos;est dans
+                cet esprit qu&apos;est née Meridian Solar — pour transposer les
+                meilleures pratiques du marché européen au bénéfice des clients marocains.
               </p>
               <p className="text-gray-500 leading-relaxed mb-8">
-                Notre fondateur, Youssef El Amrani, a créé Meridian Solar avec
-                la conviction que l&apos;énergie propre doit être accessible à
-                tous — pas seulement aux grandes entreprises. Aujourd&apos;hui, notre
-                équipe de 35 professionnels certifiés partage cette même passion
-                et ce même engagement.
+                Basée à Marrakech et intervenant sur tout le territoire marocain,
+                Meridian Solar s&apos;appuie également sur Shabaka InnovLab, structure
+                partenaire d&apos;accompagnement entrepreneurial.
               </p>
               <div className="flex gap-8">
-                <div>
-                  <div className="text-3xl font-bold gradient-text">35</div>
-                  <div className="text-sm text-gray-500">Professionnels</div>
-                </div>
                 <div>
                   <div className="text-3xl font-bold gradient-text">10+</div>
                   <div className="text-sm text-gray-500">Ans d&apos;expérience</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold gradient-text">3</div>
-                  <div className="text-sm text-gray-500">Villes au Maroc</div>
+                  <div className="text-3xl font-bold gradient-text">Tout</div>
+                  <div className="text-sm text-gray-500">Le territoire marocain</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold gradient-text">100%</div>
+                  <div className="text-sm text-gray-500">Engagement qualité</div>
                 </div>
               </div>
             </div>
@@ -167,12 +139,12 @@ export default function AProposPage() {
             <div className="bg-gray-50 rounded-3xl p-8">
               <h3 className="font-bold text-gray-900 mb-6 flex items-center gap-2">
                 <Award className="w-5 h-5 text-navy-600" />
-                Notre Parcours
+                Le Parcours de Hicham Abdeladim
               </h3>
               <div className="space-y-4">
-                {milestones.map(({ year, event }) => (
-                  <div key={year} className="flex items-start gap-4">
-                    <div className="w-14 shrink-0">
+                {milestones.map(({ year, event }, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <div className="w-24 shrink-0">
                       <span className="text-sm font-bold text-navy-600">{year}</span>
                     </div>
                     <div className="flex-1 flex items-start gap-3">
@@ -215,69 +187,67 @@ export default function AProposPage() {
         </div>
       </section>
 
-      {/* Team */}
+      {/* Founder */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-navy-600 font-semibold text-sm uppercase tracking-widest mb-3 block">
-              L&apos;Équipe
+              Le Fondateur
             </span>
             <h2 className="section-title">
-              Des Experts à Votre <span className="gradient-text">Service</span>
+              Une Équipe à Votre <span className="gradient-text">Service</span>
             </h2>
+            <p className="section-subtitle">
+              Derrière Meridian Solar, un gérant fondateur expérimenté et une équipe
+              dédiée, passionnée par les énergies renouvelables.
+            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {team.map(({ name, role, bio, initials, color }) => (
-              <div
-                key={name}
-                className="card p-6 text-center group hover:-translate-y-1 transition-transform duration-300"
-              >
-                <div
-                  className={`w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-white ${
-                    color === "navy"
-                      ? "bg-gradient-to-br from-navy-500 to-navy-700"
-                      : "bg-gradient-to-br from-gold-500 to-gold-700"
-                  }`}
-                >
-                  {initials}
-                </div>
-                <h3 className="font-bold text-gray-900 mb-1">{name}</h3>
-                <p className="text-navy-600 text-xs font-medium mb-3">{role}</p>
-                <p className="text-gray-500 text-sm leading-relaxed mb-4">{bio}</p>
-                <div className="flex justify-center gap-2">
-                  <button className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-navy-600 transition-colors group/btn">
-                    <Linkedin className="w-4 h-4 text-gray-500 group-hover/btn:text-white transition-colors" />
-                  </button>
-                  <button className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-navy-600 transition-colors group/btn">
-                    <Mail className="w-4 h-4 text-gray-500 group-hover/btn:text-white transition-colors" />
-                  </button>
-                </div>
+          <div className="max-w-md mx-auto">
+            <div className="card p-8 text-center group hover:-translate-y-1 transition-transform duration-300">
+              <div className="w-24 h-24 rounded-2xl flex items-center justify-center mx-auto mb-5 text-3xl font-bold text-white bg-gradient-to-br from-navy-500 to-navy-700">
+                HA
               </div>
-            ))}
+              <h3 className="font-bold text-gray-900 text-xl mb-1">Hicham Abdeladim</h3>
+              <p className="text-navy-600 text-sm font-medium mb-4">Gérant Fondateur</p>
+              <p className="text-gray-500 text-sm leading-relaxed mb-5">
+                Plus de 10 ans d&apos;expérience dans les énergies renouvelables en France
+                (solaire photovoltaïque, pompes à chaleur, efficacité énergétique).
+                Ancien directeur et chef d&apos;entreprise, installé au Maroc depuis 2020
+                pour y développer Meridian Solar.
+              </p>
+              <div className="flex justify-center gap-2">
+                <button className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-navy-600 transition-colors group/btn">
+                  <Linkedin className="w-4 h-4 text-gray-500 group-hover/btn:text-white transition-colors" />
+                </button>
+                <button className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-navy-600 transition-colors group/btn">
+                  <Mail className="w-4 h-4 text-gray-500 group-hover/btn:text-white transition-colors" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Certifications */}
+      {/* Engagements */}
       <section className="py-20 bg-navy-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Nos <span className="text-gold-400">Certifications</span>
+              Nos <span className="text-gold-400">Engagements</span>
             </h2>
             <p className="text-white/70">
-              La garantie d&apos;une expertise reconnue aux niveaux national et international
+              La qualité et la transparence au cœur de chaque projet
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-3xl mx-auto">
-            {certifications.map((cert) => (
+            {engagements.map((item) => (
               <div
-                key={cert}
+                key={item}
                 className="flex items-center gap-3 bg-navy-800/50 border border-navy-700/50 rounded-xl p-4"
               >
                 <CheckCircle className="w-5 h-5 text-gold-400 shrink-0" />
-                <span className="text-white/80 text-sm">{cert}</span>
+                <span className="text-white/80 text-sm">{item}</span>
               </div>
             ))}
           </div>
@@ -291,11 +261,11 @@ export default function AProposPage() {
             <Users className="w-12 h-12 text-navy-600" />
           </div>
           <h2 className="section-title">
-            Rejoignez la Famille <span className="gradient-text">Meridian Solar</span>
+            Travaillons Ensemble pour Votre <span className="gradient-text">Projet Solaire</span>
           </h2>
           <p className="section-subtitle">
-            500+ clients nous font confiance. Devenez l&apos;un d&apos;eux et
-            profitez d&apos;une énergie propre, économique et durable.
+            Bénéficiez d&apos;une expertise européenne au service de votre transition
+            énergétique. Obtenez votre étude personnalisée gratuite.
           </p>
           <Link href="/devis" className="btn-primary inline-flex">
             Obtenir mon devis gratuit
