@@ -49,7 +49,7 @@ const values = [
 const milestones = [
   { year: "France", event: "Directeur au sein de plusieurs entreprises spécialisées dans les économies d'énergie et les énergies renouvelables" },
   { year: "France", event: "Gérant fondateur de sa propre société — installations solaires, pompes à chaleur et solutions d'efficacité énergétique" },
-  { year: "2020", event: "Installation au Maroc et création de Meridian Solar à Marrakech" },
+  { year: "2026", event: "Installation au Maroc et création de Meridian Solar à Marrakech" },
   { year: "Aujourd'hui", event: "Une équipe dédiée, des projets réalisés dans tout le Maroc" },
 ];
 
@@ -108,7 +108,7 @@ export default function AProposPage() {
                 d&apos;économie d&apos;énergie.
               </p>
               <p className="text-gray-500 leading-relaxed mb-6">
-                En 2020, il s&apos;installe au Maroc avec une conviction forte : le
+                En 2026, il s&apos;installe au Maroc avec une conviction forte : le
                 potentiel solaire marocain est immense et mérite une approche
                 professionnelle à la hauteur des standards européens. C&apos;est dans
                 cet esprit qu&apos;est née Meridian Solar — pour transposer les
@@ -116,8 +116,8 @@ export default function AProposPage() {
               </p>
               <p className="text-gray-500 leading-relaxed mb-8">
                 Basée à Marrakech et intervenant sur tout le territoire marocain,
-                Meridian Solar s&apos;appuie également sur Shabaka InnovLab, structure
-                partenaire d&apos;accompagnement entrepreneurial.
+                Meridian Solar est développée en partenariat avec Shabaka InnovLab,
+                structure d&apos;accompagnement entrepreneurial.
               </p>
               <div className="flex gap-8">
                 <div>
@@ -213,7 +213,7 @@ export default function AProposPage() {
               <p className="text-gray-500 text-sm leading-relaxed mb-5">
                 Plus de 10 ans d&apos;expérience dans les énergies renouvelables en France
                 (solaire photovoltaïque, pompes à chaleur, efficacité énergétique).
-                Ancien directeur et chef d&apos;entreprise, installé au Maroc depuis 2020
+                Ancien directeur et chef d&apos;entreprise, installé au Maroc depuis 2026
                 pour y développer Meridian Solar.
               </p>
               <div className="flex justify-center gap-2">
