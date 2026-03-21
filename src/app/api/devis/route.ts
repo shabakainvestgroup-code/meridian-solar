@@ -211,7 +211,7 @@ export async function POST(req: Request) {
     await resend.emails.send({
       from: `Meridian Solar <${FROM_EMAIL}>`,
       to: [CONTACT_EMAIL],
-      replyTo: body.email,
+      reply_to: body.email,
       subject: teamSubject,
       html: teamHtml,
     });
