@@ -12,9 +12,11 @@ const services = [
 
 const links = [
   { href: "/", label: "Accueil" },
+  { href: "/a-propos", label: "À propos" },
   { href: "/services", label: "Services" },
   { href: "/realisations", label: "Réalisations" },
-  { href: "/a-propos", label: "À propos" },
+  { href: "/phototeque", label: "Photothèque" },
+  { href: "/documentation", label: "Documentation" },
   { href: "/devis", label: "Devis gratuit" },
   { href: "/contact", label: "Contact" },
 ];
@@ -162,10 +164,13 @@ export default function Footer() {
             © {new Date().getFullYear()} Meridian Solar. Tous droits réservés.
           </p>
           <div className="flex gap-6">
-            <Link href="#" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
+            <Link href="/mentions-legales" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
               Mentions légales
             </Link>
-            <Link href="#" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
+            <Link href="/conditions-generales" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
+              Conditions générales
+            </Link>
+            <Link href="/politique-confidentialite" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
               Politique de confidentialité
             </Link>
           </div>

@@ -8,10 +8,10 @@ import { Menu, X, ChevronRight, Calculator } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
+  { href: "/a-propos", label: "À propos" },
   { href: "/services", label: "Services" },
   { href: "/realisations", label: "Réalisations" },
   { href: "/simulateur", label: "Simulateur", highlight: true },
-  { href: "/a-propos", label: "À propos" },
   { href: "/contact", label: "Contact" },
 ];
 

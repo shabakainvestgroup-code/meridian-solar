@@ -47,10 +47,10 @@ const values = [
 ];
 
 const milestones = [
-  { year: "France", event: "Directeur au sein de plusieurs entreprises spécialisées dans les économies d'énergie et les énergies renouvelables" },
-  { year: "France", event: "Gérant fondateur de sa propre société — installations solaires, pompes à chaleur et solutions d'efficacité énergétique" },
-  { year: "2026", event: "Installation au Maroc et création de Meridian Solar à Marrakech" },
-  { year: "Aujourd'hui", event: "Une équipe dédiée, des projets réalisés dans tout le Maroc" },
+  { year: "Fondation", event: "Expertise de plus de 10 ans en énergies renouvelables — solaire photovoltaïque, pompes à chaleur et efficacité énergétique" },
+  { year: "Équipe", event: "Ingénieurs, techniciens qualifiés et spécialistes certifiés aux standards européens" },
+  { year: "2026", event: "Implantation au Maroc avec l'ambition d'apporter l'excellence européenne" },
+  { year: "Aujourd'hui", event: "Une équipe dédiée réalisant des projets d'envergure dans tout le Maroc" },
 ];
 
 const engagements = [
@@ -100,24 +100,23 @@ export default function AProposPage() {
                 <span className="gradient-text">au Service du Maroc</span>
               </h2>
               <p className="text-gray-500 leading-relaxed mb-6">
-                Hicham Abdeladim, gérant fondateur de Meridian Solar, a consacré plus de
-                10 ans à l&apos;industrie des énergies renouvelables en France. D&apos;abord
-                directeur au sein de plusieurs entreprises du secteur, il devient ensuite
-                chef d&apos;entreprise à la tête de sa propre société spécialisée dans
-                l&apos;installation solaire, les pompes à chaleur et les solutions
-                d&apos;économie d&apos;énergie.
+                Meridian Solar s&apos;appuie sur une équipe d&apos;experts forts de plus de
+                10 ans d&apos;expérience dans les énergies renouvelables en Europe. Notre collectif
+                réunit ingénieurs confirmés, techniciens qualifiés et spécialistes certifiés
+                aux standards européens les plus exigeants en installations solaires,
+                pompes à chaleur et solutions d&apos;efficacité énergétique.
               </p>
               <p className="text-gray-500 leading-relaxed mb-6">
-                En 2026, il s&apos;installe au Maroc avec une conviction forte : le
-                potentiel solaire marocain est immense et mérite une approche
-                professionnelle à la hauteur des standards européens. C&apos;est dans
-                cet esprit qu&apos;est née Meridian Solar — pour transposer les
-                meilleures pratiques du marché européen au bénéfice des clients marocains.
+                Forte de cette expertise reconnue, notre équipe s&apos;installe au Maroc en 2026
+                avec une conviction unifiée : le potentiel solaire marocain est immense et mérite
+                une approche véritablement professionnelle, à la hauteur des standards européens.
+                C&apos;est dans cet esprit collaboratif qu&apos;est née Meridian Solar — pour transposer
+                les meilleures pratiques du marché européen au bénéfice direct de tous nos clients marocains.
               </p>
               <p className="text-gray-500 leading-relaxed mb-8">
                 Basée à Marrakech et intervenant sur tout le territoire marocain,
-                Meridian Solar est développée en partenariat avec Shabaka InnovLab,
-                structure d&apos;accompagnement entrepreneurial.
+                Meridian Solar mobilise cette expertise collective en partenariat avec Shabaka InnovLab,
+                structure d&apos;accompagnement entrepreneurial reconnaissant la qualité de nos compétences.
               </p>
               <div className="flex gap-8">
                 <div>
@@ -139,7 +138,7 @@ export default function AProposPage() {
             <div className="bg-gray-50 rounded-3xl p-8">
               <h3 className="font-bold text-gray-900 mb-6 flex items-center gap-2">
                 <Award className="w-5 h-5 text-navy-600" />
-                Le Parcours de Hicham Abdeladim
+                Notre Expertise Collective
               </h3>
               <div className="space-y-4">
                 {milestones.map(({ year, event }, i) => (
@@ -187,43 +186,54 @@ export default function AProposPage() {
         </div>
       </section>
 
-      {/* Founder */}
+      {/* Team Expertise */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="text-navy-600 font-semibold text-sm uppercase tracking-widest mb-3 block">
-              Le Fondateur
+              Notre Force
             </span>
             <h2 className="section-title">
-              Une Équipe à Votre <span className="gradient-text">Service</span>
+              Une Équipe d&apos;Experts à Votre <span className="gradient-text">Service</span>
             </h2>
             <p className="section-subtitle">
-              Derrière Meridian Solar, un gérant fondateur expérimenté et une équipe
-              dédiée, passionnée par les énergies renouvelables.
+              Meridian Solar réunit les meilleures compétences en énergies renouvelables.
+              Chaque projet bénéficie de notre expertise collective aux standards européens.
             </p>
           </div>
 
-          <div className="max-w-md mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="card p-8 text-center group hover:-translate-y-1 transition-transform duration-300">
-              <div className="w-24 h-24 rounded-2xl flex items-center justify-center mx-auto mb-5 text-3xl font-bold text-white bg-gradient-to-br from-navy-500 to-navy-700">
-                HA
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl font-bold text-white bg-gradient-to-br from-navy-500 to-navy-700">
+                🔧
               </div>
-              <h3 className="font-bold text-gray-900 text-xl mb-1">Hicham Abdeladim</h3>
-              <p className="text-navy-600 text-sm font-medium mb-4">Gérant Fondateur</p>
-              <p className="text-gray-500 text-sm leading-relaxed mb-5">
-                Plus de 10 ans d&apos;expérience dans les énergies renouvelables en France
-                (solaire photovoltaïque, pompes à chaleur, efficacité énergétique).
-                Ancien directeur et chef d&apos;entreprise, installé au Maroc depuis 2026
-                pour y développer Meridian Solar.
+              <h3 className="font-bold text-gray-900 text-lg mb-2">Ingénieurs Qualifiés</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Nos ingénieurs possèdent plus de 10 ans d&apos;expérience en dimensionnement
+                et conception de systèmes solaires et d&apos;efficacité énergétique.
               </p>
-              <div className="flex justify-center gap-2">
-                <button className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-navy-600 transition-colors group/btn">
-                  <Linkedin className="w-4 h-4 text-gray-500 group-hover/btn:text-white transition-colors" />
-                </button>
-                <button className="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-navy-600 transition-colors group/btn">
-                  <Mail className="w-4 h-4 text-gray-500 group-hover/btn:text-white transition-colors" />
-                </button>
+            </div>
+
+            <div className="card p-8 text-center group hover:-translate-y-1 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl font-bold text-white bg-gradient-to-br from-navy-500 to-navy-700">
+                ✓
               </div>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">Techniciens Certifiés</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Nos techniciens d&apos;installation sont certifiés aux standards européens les plus exigeants,
+                garantissant une qualité d&apos;exécution sans compromis.
+              </p>
+            </div>
+
+            <div className="card p-8 text-center group hover:-translate-y-1 transition-transform duration-300">
+              <div className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 text-2xl font-bold text-white bg-gradient-to-br from-navy-500 to-navy-700">
+                📊
+              </div>
+              <h3 className="font-bold text-gray-900 text-lg mb-2">Spécialistes Reconnus</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">
+                Pompes à chaleur, photovoltaïque, efficacité énergétique — chaque domaine
+                dispose d&apos;experts dédiés pour des solutions optimales.
+              </p>
             </div>
           </div>
         </div>

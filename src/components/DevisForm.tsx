@@ -46,21 +46,34 @@ export default function DevisForm() {
     formState: { errors },
   } = useForm<FormData>();
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = (data: FormData) => {
     setStatus("loading");
     setErrorMsg("");
 
     try {
-      const res = await fetch("/api/devis", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+      // Construire le message formaté pour WhatsApp
+      const message = `*Demande de Devis - Meridian Solar*
 
-      if (!res.ok) {
-        const body = await res.json().catch(() => ({}));
-        throw new Error(body.error || "Erreur lors de l'envoi");
-      }
+*📋 Coordonnées:*
+Prénom: ${data.prenom}
+Nom: ${data.nom}
+Email: ${data.email}
+Téléphone: ${data.telephone}
+Ville: ${data.ville}
+
+*🔌 Projet Solaire:*
+Type d'installation: ${data.typeInstallation || "Non spécifié"}
+Type de bâtiment: ${data.typeBatiment || "Non spécifié"}
+Puissance souhaitée: ${data.puissanceSouhaitee || "À déterminer"}
+Facture mensuelle: ${data.factureMensuelle || "Non spécifiée"}
+
+${data.message ? `*💬 Précisions:*\n${data.message}` : ""}`;
+
+      // Encoder le message et créer le lien WhatsApp
+      const whatsappUrl = `https://wa.me/212755054395?text=${encodeURIComponent(message)}`;
+
+      // Ouvrir WhatsApp dans un nouvel onglet
+      window.open(whatsappUrl, "_blank");
 
       setStatus("success");
       reset();

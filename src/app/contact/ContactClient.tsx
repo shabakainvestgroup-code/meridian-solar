@@ -70,15 +70,26 @@ export default function ContactClient() {
     formState: { errors },
   } = useForm<ContactFormData>();
 
-  const onSubmit = async (data: ContactFormData) => {
+  const onSubmit = (data: ContactFormData) => {
     setStatus("loading");
     try {
-      const res = await fetch("/api/devis", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, type: "contact" }),
-      });
-      if (!res.ok) throw new Error("Erreur lors de l'envoi");
+      // Construire le message pour WhatsApp
+      const message = `*Formulaire de Contact - Meridian Solar*
+
+Nom: ${data.nom}
+Email: ${data.email}
+
+*Sujet:* ${data.sujet}
+
+*Message:*
+${data.message}`;
+
+      // Encoder le message et créer le lien WhatsApp
+      const whatsappUrl = `https://wa.me/212755054395?text=${encodeURIComponent(message)}`;
+
+      // Ouvrir WhatsApp dans un nouvel onglet
+      window.open(whatsappUrl, "_blank");
+
       setStatus("success");
       reset();
     } catch (err: unknown) {
