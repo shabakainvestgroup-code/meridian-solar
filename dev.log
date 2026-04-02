@@ -1,0 +1,57 @@
+
+> meridian-solar@0.1.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+ ⚠ Port 3001 is in use, trying 3002 instead.
+ ⚠ Port 3002 is in use, trying 3003 instead.
+ ⚠ Port 3003 is in use, trying 3004 instead.
+ ⚠ Port 3004 is in use, trying 3005 instead.
+ ⚠ Port 3005 is in use, trying 3006 instead.
+  ▲ Next.js 14.2.5
+  - Local:        http://localhost:3006
+  - Environments: .env.local
+
+ ✓ Starting...
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from C:\Users\shaba\meridian-solar\.next\cache\webpack\client-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ✓ Ready in 2.4s
+ ○ Compiling / ...
+ ✓ Compiled / in 5.7s (588 modules)
+ GET / 200 in 6081ms
+ ✓ Compiled in 544ms (282 modules)
+ ○ Compiling /a-propos ...
+ ✓ Compiled /a-propos in 618ms (580 modules)
+ GET /a-propos 200 in 842ms
+ GET / 200 in 57ms
+<w> [webpack.cache.PackFileCacheStrategy] Restoring pack from C:\Users\shaba\meridian-solar\.next\cache\webpack\server-development.pack.gz failed: TypeError: Cannot read properties of undefined (reading 'hasStartTime')
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 750ms (583 modules)
+ GET /a-propos 404 in 1022ms
+ ✓ Compiled /services in 277ms (588 modules)
+ GET /services 200 in 464ms
+ ✓ Compiled /realisations in 240ms (586 modules)
+ GET /realisations 200 in 435ms
+ ○ Compiling /contact ...
+ ✓ Compiled /contact in 529ms (621 modules)
+ GET /contact 200 in 637ms
+ ○ Compiling /documentation ...
+ ✓ Compiled /documentation in 2.5s (1106 modules)
+ GET /documentation 200 in 2697ms
+ ✓ Compiled / in 241ms (306 modules)
+ GET / 200 in 342ms
+ ✓ Compiled /a-propos in 66ms (312 modules)
+ GET /a-propos 200 in 150ms
+ ✓ Compiled /services in 460ms (317 modules)
+ GET /services 200 in 565ms
+ ✓ Compiled /realisations in 82ms (321 modules)
+ GET /realisations 200 in 168ms
+ ✓ Compiled /contact in 291ms (340 modules)
+ GET /contact 200 in 404ms
+ ✓ Compiled /simulateur in 495ms (853 modules)
+ GET /simulateur 200 in 618ms
+ ✓ Compiled /devis in 368ms (868 modules)
+ GET /devis 200 in 462ms
+ ✓ Compiled /documentation in 352ms (645 modules)
+ GET /documentation 200 in 542ms
+ ✓ Compiled /phototeque in 276ms (1153 modules)
+ GET /phototeque 200 in 415ms
